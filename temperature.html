@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="mark-to-grade.html">Grade Converter</a>
+      <a href="staff.html">Staff</a>
+      <a href="temperature.html">Temperature</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temperature Converter</h1>
+    <input type="number"  id="temp-input"  placeholder="Enter value"oninput="convertTemp()" />
+    <select id="unit" onchange="convertTemp()">
+      <option  value="C">Celsius</option>
+      <option value="F">Fahrenheit</option>
+      <option value="K">Kelvin</option>
+    </select>
+    <div  id="output"></div>
+  </main>
+
+  <footer>
+    <p>&copy; Manveer Singh <span id="date"></span></p>
+  </footer>
+
+  <script scr="all.js">
+    
+  </script>
+</body>
+</html>
